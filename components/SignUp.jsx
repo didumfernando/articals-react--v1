@@ -66,7 +66,7 @@ const SignUp = () => {
 
                 <button type="submit" onClick={(e) => handleSubmit(e)}>Sign Up</button>
 
-                <p>If you are already signed up log in from bellow</p>
+                <p>If you are already signed up log in from below</p>
                 
                 <button type="button" onClick={(e) => signUpPage(e)}>Log In</button>
                     
