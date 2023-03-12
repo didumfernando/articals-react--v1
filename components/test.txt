@@ -1,0 +1,23 @@
+<div className='bigCard'>
+                {articals.map(card => (
+                    <div className="card" key={card.title} >
+                        <h2><BsPlusLg className='plus' /></h2>
+                        <div className='p-5'>
+                            <h3 className='text-xl font-bold'>{card.title}</h3>
+                            <p>
+                                {card.content}
+                            </p>
+
+                            <p>{card.tags[0]}</p>
+                            <p>{card.tags[2]}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+
+
+
+
+
+<input type="text" value={articalType} placeholder="artical type" onChange={(e) => setArticalType(e.target.value)}/>

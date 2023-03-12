@@ -1,0 +1,123 @@
+:root{
+    background-color: black;
+    
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    .title{
+        width: 100%;
+        h2{
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: clamp(2rem,3vw,3vw);
+            margin: 30px;
+            scroll-behavior: smooth;
+            text-transform: capitalize;
+        }
+        .accInfo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px;
+            
+            text-transform: capitalize;
+            a{
+                margin-bottom: 10px;
+                text-decoration: none;
+                button{
+                    all: unset;
+                    border: 2px solid rgb(0, 0, 0);
+                    border-radius: 20px;
+                    padding: 10px;
+                    font-size: clamp(0.5rem,1vw,1vw);
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    transition: transform 0.5s ease-in;
+    
+                    
+                }
+                button:hover{
+                    background-color: rgb(0, 0, 0);
+                    color: rgb(255, 255, 255);
+                    transform: scale(1.05);
+    
+                }
+            }
+            h6{
+                margin: 0;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                font-size: clamp(1rem,1.2vw,1.2vw);
+                color: rgb(235, 234, 233);
+            }
+        }
+        background-color: rgb(27, 12, 245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+        
+        
+    }
+    
+
+    .card-list {
+        padding-bottom: 20px;
+        
+        background-color: rgb(10, 9, 9);
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .addArtical{
+            padding: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgb(10, 9, 9);
+            
+            
+            a{
+                color: rgb(245, 243, 248);
+                display: flex; 
+                align-items: center;
+                text-decoration: none;
+                .write{
+                    width: clamp(2rem,4vw,4vw);
+                    padding-right: 10px;
+                    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(160deg) brightness(108%) contrast(101%);
+                }
+                h4{
+                    all: unset;
+                    font-size: clamp(1rem,1.5vw,1.5vw);
+                    text-shadow:  5px 5px 3px #380fcc2c;
+                    text-transform: capitalize;
+   
+                }
+            }
+            a:hover{
+                color: rgb(63, 4, 224);
+            }
+            
+        }
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .card{
+        width: 50%;
+    }
+}

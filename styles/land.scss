@@ -1,0 +1,45 @@
+.landPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(247, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1{
+        font-size: clamp(4rem,8vw,8rem);
+        padding: 10px;
+        color: blueviolet;
+        text-shadow:  10px 10px 10px #3a39392c;
+    }
+    h2{
+        font-size: clamp(1rem,1.5vw,4rem);
+        padding: 10px;
+        color: blueviolet;
+    }
+    a{
+        all: unset;
+    }
+    .startReadButton{
+        all: unset;
+        font-size: clamp(1rem,1vw,2rem);
+        margin: 10px;
+        margin-top: 30px;
+        padding: 15px;
+        border-radius: 30px;
+        transition: 0.4s ;
+        cursor: pointer;
+        background-image: linear-gradient(to right, #331eee 0%, #c2e9fb 51%, #7a9ed8 100%);
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+    }
+    .startReadButton:hover{
+        
+       transform: scale(1.1);
+        background-position: right center; /* change the direction of the change here */
+        
+    }
+}
