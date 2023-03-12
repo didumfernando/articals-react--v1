@@ -19,7 +19,7 @@ const Admin = () => {
     }
     const handleSubmit = (e, id) => {
         e.preventDefault();
-        axios.delete(`https://myservice-5ysh.onrender.com/deleteartical/${id}`).then((res) => {
+        axios.delete(`https://nexus-backend-2cvw.onrender.com/deleteartical/${id}`).then((res) => {
             alert("deleted");
             getArticals();
         });
@@ -27,7 +27,7 @@ const Admin = () => {
     };
 
     function getArticals() {
-        fetch('https://myservice-5ysh.onrender.com/getarticals')
+        fetch('https://nexus-backend-2cvw.onrender.com/getarticals')
             .then(response => response.json())
             .then(data => {
                 setArticals(data);
@@ -37,7 +37,7 @@ const Admin = () => {
     }
 
     useEffect(() => {
-        fetch('https://myservice-5ysh.onrender.com/getarticals')
+        fetch('https://nexus-backend-2cvw.onrender.com/getarticals')
             .then(response => response.json())
             .then(data => {
                 setArticals(data);

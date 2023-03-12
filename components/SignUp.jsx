@@ -20,7 +20,7 @@ const SignUp = () => {
         // make a popup alert showing the "submitted" text
         const configuration = {
             method: "post",
-            url: "https://myservice-5ysh.onrender.com/register",
+            url: "https://nexus-backend-2cvw.onrender.com/register",
             data: {
                 email,
                 password,

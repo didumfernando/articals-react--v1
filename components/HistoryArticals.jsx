@@ -22,7 +22,7 @@ const HistoryArticals = () => {
     }
 
     useEffect(() => {
-        fetch('https://myservice-5ysh.onrender.com/getarticals')
+        fetch('https://nexus-backend-2cvw.onrender.com/getarticals')
             .then(response => response.json())
             .then(data => {
                 const filteredData = data.filter(item => item.articalType === 'sports');

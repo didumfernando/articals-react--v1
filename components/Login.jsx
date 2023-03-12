@@ -33,7 +33,7 @@ const Login = () => {
             // set configurations
             const configuration = {
                 method: "post",
-                url: "https://myservice-5ysh.onrender.com/login",
+                url: "https://nexus-backend-2cvw.onrender.com/login",
                 data: {
                     email,
                     password,
